@@ -3,6 +3,6 @@ sudo: false
 script:
 - sbt '; ^^ 0.13.17-RC2 ; compile'
 - git clean -fdx
-- sbt '; ^^ 0.13.17-RC2 ; set scalaVersion := "2.10.7" ; compile'
+- sbt '; ++2.10.7! ; ^^0.13.17-RC2 ; compile' # https://github.com/sbt/sbt/issues/3907#issuecomment-361838022
 jdk:
 - oraclejdk9
