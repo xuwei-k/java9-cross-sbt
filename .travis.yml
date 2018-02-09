@@ -1,8 +1,8 @@
 language: scala
 sudo: false
 script:
-- sbt '; ^^ 0.13.17-RC2 ; compile'
+- sbt '; ^^ 0.13.17 ; compile'
 - git clean -fdx
-- sbt '; ^^ 0.13.17-RC2 ; set scalaVersion := "2.10.7" ; compile'
+- sbt '; ^^ 0.13.17 ; set scalaVersion := "2.10.7" ; compile'
 jdk:
 - oraclejdk9
